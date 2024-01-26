@@ -19,6 +19,7 @@ import { FormError } from "../form-error";
 import { FormSuccess } from "../form-success";
 import { login } from "@/actions/login";
 import { useState, useTransition } from "react";
+import Link from "next/link";
 
 export const LoginForm = () => {
 
@@ -109,6 +110,11 @@ export const LoginForm = () => {
                         placeholder="*******"
                       />
                     </FormControl>
+                    <Button variant="link" size="sm" className="px-0 font-normal" >
+                      <Link href="/auth/forgot-password">
+                        Forgot password ?
+                      </Link>
+                    </Button>
                     <FormMessage />
                   </FormItem>
                 )}
