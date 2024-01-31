@@ -5,9 +5,9 @@
  */
 export const publicRoutes = [
   "/",
-  "/auth/new-verification",
-
+  "/auth/new-verification"
 ];
+
 /**
  * An array of routes that are used for authentication
  * These routes will redirect logged in users to /settings
@@ -17,9 +17,10 @@ export const authRoutes = [
   "/auth/login",
   "/auth/register",
   "/auth/error",
-  "/auth/forgot-password",
-  "/auth/new-password",
+  "/auth/reset",
+  "/auth/new-password"
 ];
+
 /**
  * The prefix for API authentication routes
  * Routes that start with this prefix are used for API authentication purposes
